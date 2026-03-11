@@ -56,8 +56,40 @@ class Program
 
     static void ShowBooksMenu()
     {
-        Console.WriteLine("===== MENÚ DE LIBROS =====");
-        Console.ReadKey();
+        int option = 0;
+
+        while(option != 6)
+        {
+            Console.Clear();
+            Console.WriteLine("=== MENÚ LIBROS ===");
+            Console.WriteLine("1. Registrar libro");
+            Console.WriteLine("2. Listar libros");
+            Console.WriteLine("3. Ver detalle");
+            Console.WriteLine("4. Actualizar libro");
+            Console.WriteLine("5. Eliminar libro");
+            Console.WriteLine("6. Volver");
+
+            int.TryParse(Console.ReadLine(), out option);
+
+            switch(option)
+            {
+                case 1:
+                    RegisterBook();
+                    break;
+                case 2:
+                    ListBooksMenu();
+                    break;
+                case 3:
+                    ViewBookDetail();
+                    break;
+                case 4:
+                    UpdateBookMenu();
+                    break;
+                case 5:
+                    DeleteBook();
+                    break;
+            }
+        }
     }
 
     static void ShowUsersMenu()
