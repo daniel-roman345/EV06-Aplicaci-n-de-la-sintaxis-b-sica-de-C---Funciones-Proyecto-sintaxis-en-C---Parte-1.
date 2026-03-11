@@ -9,6 +9,84 @@ class Program
 
     static void ShowMainMenu()
     {
-        Console.WriteLine("=== SISTEMA BIBLIOTECA ===");
+        int option = 0;
+
+        while (option != 6)
+        {
+            Console.Clear();
+            Console.WriteLine("===== MENÚ PRINCIPAL =====");
+            Console.WriteLine("1. Libros");
+            Console.WriteLine("2. Usuarios");
+            Console.WriteLine("3. Préstamos");
+            Console.WriteLine("4. Búsquedas y reportes");
+            Console.WriteLine("5. Guardar / Cargar datos");
+            Console.WriteLine("6. Salir");
+
+            Console.Write("Seleccione una opción: ");
+
+            int.TryParse(Console.ReadLine(), out option);
+
+            switch(option)
+            {
+                case 1:
+                    ShowBooksMenu();
+                    break;
+                case 2:
+                    ShowUsersMenu();
+                    break;
+                case 3:
+                    ShowLoansMenu();
+                    break;
+                case 4:
+                    ShowSearchReportsMenu();
+                    break;
+                case 5:
+                    ShowPersistenceMenu();
+                    break;
+                case 6:
+                    ConfirmExitAndSave();
+                    break;
+                default:
+                    Console.WriteLine("Opción inválida");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+    }
+
+    static void ShowBooksMenu()
+    {
+        Console.WriteLine("===== MENÚ DE LIBROS =====");
+        Console.ReadKey();
+    }
+
+    static void ShowUsersMenu()
+    {
+        Console.WriteLine("===== MENÚ DE USUARIOS =====");
+        Console.ReadKey();
+    }
+
+    static void ShowLoansMenu()
+    {
+        Console.WriteLine("===== MENÚ DE PRÉSTAMOS =====");
+        Console.ReadKey();
+    }
+
+    static void ShowSearchReportsMenu()
+    {
+        Console.WriteLine("===== MENÚ DE BÚSQUEDAS Y REPORTES =====");
+        Console.ReadKey();
+    }
+
+    static void ShowPersistenceMenu()
+    {
+        Console.WriteLine("===== MENÚ DE GUARDAR / CARGAR DATOS =====");
+        Console.ReadKey();
+    }
+
+    static void ConfirmExitAndSave()
+    {
+        Console.WriteLine("¿Desea guardar los datos antes de salir? (S/N)");
+        Console.ReadKey();
     }
 }
