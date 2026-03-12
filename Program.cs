@@ -117,14 +117,8 @@ class Program
         Console.ReadKey();
     }
 
-    static void ConfirmExitAndSave()
-    {
-        Console.WriteLine("¿Desea guardar los datos antes de salir? (S/N)");
-        Console.ReadKey();
-    }
-
     // =========================
-    // MÉTODOS FALTANTES
+    // MÉTODOS LIBROS
     // =========================
 
     static void RegisterBook()
@@ -159,6 +153,30 @@ class Program
     {
         Console.Clear();
         Console.WriteLine("Eliminar libro (función en desarrollo)");
+        Console.ReadKey();
+    }
+
+    // =========================
+    // SALIR
+    // =========================
+
+    static void ConfirmExitAndSave()
+    {
+        Console.WriteLine("¿Desea guardar antes de salir? (S/N)");
+
+        string response = Console.ReadLine() ?? "";
+
+        if(response.ToUpper() == "S")
+        {
+            SaveData();
+        }
+
+        Environment.Exit(0);
+    }
+
+    static void SaveData()
+    {
+        Console.WriteLine("Guardando datos...");
         Console.ReadKey();
     }
 }
