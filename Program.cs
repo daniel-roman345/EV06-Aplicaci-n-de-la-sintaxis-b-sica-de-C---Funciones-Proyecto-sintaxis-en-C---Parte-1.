@@ -69,6 +69,7 @@ class Program
             Console.WriteLine("5. Eliminar libro");
             Console.WriteLine("6. Volver");
 
+            Console.Write("Seleccione una opción: ");
             int.TryParse(Console.ReadLine(), out option);
 
             switch(option)
@@ -119,6 +120,45 @@ class Program
     static void ConfirmExitAndSave()
     {
         Console.WriteLine("¿Desea guardar los datos antes de salir? (S/N)");
+        Console.ReadKey();
+    }
+
+    // =========================
+    // MÉTODOS FALTANTES
+    // =========================
+
+    static void RegisterBook()
+    {
+        Console.Clear();
+        Console.WriteLine("Registrar libro (función en desarrollo)");
+        Console.ReadKey();
+    }
+
+    static void ListBooksMenu()
+    {
+        Console.Clear();
+        Console.WriteLine("Listar libros (función en desarrollo)");
+        Console.ReadKey();
+    }
+
+    static void ViewBookDetail()
+    {
+        Console.Clear();
+        Console.WriteLine("Ver detalle del libro (función en desarrollo)");
+        Console.ReadKey();
+    }
+
+    static void UpdateBookMenu()
+    {
+        Console.Clear();
+        Console.WriteLine("Actualizar libro (función en desarrollo)");
+        Console.ReadKey();
+    }
+
+    static void DeleteBook()
+    {
+        Console.Clear();
+        Console.WriteLine("Eliminar libro (función en desarrollo)");
         Console.ReadKey();
     }
 }
