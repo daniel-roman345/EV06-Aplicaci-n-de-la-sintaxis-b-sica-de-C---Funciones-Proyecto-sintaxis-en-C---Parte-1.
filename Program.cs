@@ -2,9 +2,6 @@
 
 class Program
 {
-    // ================================
-    // MÉTODO PRINCIPAL (PUNTO DE ENTRADA)
-    // ================================
     static void Main()
     {
         ShowMainMenu();
@@ -29,9 +26,10 @@ class Program
             Console.WriteLine("6. Salir");
 
             Console.Write("Seleccione una opción: ");
+
             int.TryParse(Console.ReadLine(), out option);
 
-            switch(option)
+            switch (option)
             {
                 case 1:
                     ShowBooksMenu();
@@ -72,7 +70,7 @@ class Program
     {
         int option = 0;
 
-        while(option != 6)
+        while (option != 6)
         {
             Console.Clear();
             Console.WriteLine("=== MENÚ LIBROS ===");
@@ -84,9 +82,10 @@ class Program
             Console.WriteLine("6. Volver");
 
             Console.Write("Seleccione una opción: ");
+
             int.TryParse(Console.ReadLine(), out option);
 
-            switch(option)
+            switch (option)
             {
                 case 1:
                     RegisterBook();
@@ -149,8 +148,43 @@ class Program
     // ================================
     static void ShowUsersMenu()
     {
-        Console.WriteLine("===== MENÚ DE USUARIOS =====");
-        Console.ReadKey();
+        int option = 0;
+
+        while (option != 5)
+        {
+            Console.Clear();
+            Console.WriteLine("=== MENÚ USUARIOS ===");
+            Console.WriteLine("1. Registrar usuario");
+            Console.WriteLine("2. Listar usuarios");
+            Console.WriteLine("3. Ver detalle usuario");
+            Console.WriteLine("4. Eliminar usuario");
+            Console.WriteLine("5. Volver");
+
+            Console.Write("Seleccione una opción: ");
+
+            int.TryParse(Console.ReadLine(), out option);
+
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("Simulación: registrar usuario.");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Simulación: listar usuarios.");
+                    break;
+
+                case 3:
+                    Console.WriteLine("Simulación: ver detalle usuario.");
+                    break;
+
+                case 4:
+                    Console.WriteLine("Simulación: eliminar usuario.");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
     }
 
     // ================================
@@ -166,12 +200,13 @@ class Program
             Console.WriteLine("=== MENÚ PRÉSTAMOS ===");
             Console.WriteLine("1. Crear préstamo");
             Console.WriteLine("2. Listar préstamos");
-            Console.WriteLine("3. Ver detalle");
+            Console.WriteLine("3. Ver detalle préstamo");
             Console.WriteLine("4. Registrar devolución");
             Console.WriteLine("5. Eliminar préstamo");
             Console.WriteLine("6. Volver");
 
             Console.Write("Seleccione una opción: ");
+
             int.TryParse(Console.ReadLine(), out option);
 
             switch (option)
@@ -216,7 +251,7 @@ class Program
 
     static void ViewLoanDetail()
     {
-        Console.WriteLine("Simulación: ver detalle del préstamo.");
+        Console.WriteLine("Simulación: ver detalle préstamo.");
         Console.ReadKey();
     }
 
@@ -237,7 +272,7 @@ class Program
     // ================================
     static void ShowSearchReportsMenu()
     {
-        Console.WriteLine("Simulación: menú de búsquedas.");
+        Console.WriteLine("Simulación: menú de búsquedas y reportes.");
         Console.ReadKey();
     }
 
@@ -250,48 +285,16 @@ class Program
         Console.ReadKey();
     }
 
-<<<<<<< HEAD
-    // =========================
-    // MÉTODOS LIBROS
-    // =========================
-
-    static void RegisterBook()
-=======
     // ================================
-    // SALIDA DEL SISTEMA
+    // SALIDA
     // ================================
-    static void ConfirmExitAndSave()
-    {
-        Console.WriteLine("¿Desea guardar antes de salir? (S/N)");
-
-        string response = Console.ReadLine() ?? ""; // ✓ Nunca será null
-
-        if(response.ToUpper() == "S")
-        {
-            SaveData();
-        }
-
-        Environment.Exit(0);
-    }
-
-    static void SaveData()
->>>>>>> feature/exit-flow
-    {
-        Console.WriteLine("Simulación: guardando datos...");
-        Console.ReadKey();
-    }
-
-    // =========================
-    // SALIR
-    // =========================
-
     static void ConfirmExitAndSave()
     {
         Console.WriteLine("¿Desea guardar antes de salir? (S/N)");
 
         string response = Console.ReadLine() ?? "";
 
-        if(response.ToUpper() == "S")
+        if (response.ToUpper() == "S")
         {
             SaveData();
         }
