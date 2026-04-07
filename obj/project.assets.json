@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca-menu\\biblioteca-menu.csproj",
+      "projectUniqueName": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca_menu\\biblioteca-menu.csproj",
       "projectName": "biblioteca-menu",
-      "projectPath": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca-menu\\biblioteca-menu.csproj",
+      "projectPath": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca_menu\\biblioteca-menu.csproj",
       "packagesPath": "C:\\Users\\EliteBook\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca-menu\\obj\\",
+      "outputPath": "C:\\Users\\EliteBook\\EV06 – Aplicación de la sintaxis básica de C# - Funciones Proyecto sintaxis en C# - Parte 1\\biblioteca_menu\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
